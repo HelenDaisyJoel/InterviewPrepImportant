@@ -33,18 +33,18 @@ public class handlingDropdown {
 //		Locator values=page.locator("select>option");
 //		values.nth(i).innerText()
 		
-		//Print all options
+//      Print all options
 		for(int i=0;i<value.count();i++) {
 			System.out.println(value.nth(i).getAttribute("lang"));
 		}
 		System.out.println("-------Way 2-------");
 		List<ElementHandle> values= page.querySelectorAll("select>option");
 		System.out.println(values.size());
-		for(ElementHandle value1: values) {
-			
-			System.out.println(value1.getAttribute("lang"));
+		for(ElementHandle value1: values) 
+		{
+		System.out.println(value1.getAttribute("lang"));
 		}
-				page.close();
+		page.close();
 
 	}
 
